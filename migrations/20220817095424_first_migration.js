@@ -5,9 +5,6 @@
 exports.up = function (knex) {
   return knex.schema.createTable("tableName", (table) => {
     // "På tabellen" lägger vi till "kolumntypen" med namnet "name"
-    table.columntype("name");
-    // ^ Endast exempel på ordningen
-
     // På tabellen, lägger vi till en kolumn av knex-typen "increments"
     // med namnet id. Som ger oss en kolumn med ett id som ökar för varje rad
     // vi lägger till i tabellen.
